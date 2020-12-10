@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+:root
+{
+    /* Primary colors */
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /* neutral colors */
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+body
+{
+    background-color: var(--Light-grayish-blue);
+}
+body h1
+{
+    margin-top: 50px;
+    text-align: center;
+}
+.container
+{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+    "card-1 card-1 card-2 card-5"
+    "card-3 card-4 card-4 card-5";
+    row-gap: 30px;
+    column-gap: 30px;
+}
+img
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.flex-container
+{
+    display: flex;
+    align-items: center;
+}
+.name
+{
+    display: flex;
+    flex-direction: column;
+}
+/* cards */
+/* card-1 */
+.card1
+{
+    grid-area: card-1;
+    background-color: var(--Moderate-violet);
+    border-radius: 7px;
+    color: var(--White);
+    padding: 30px 30px;
+}
+.card1 h3
+{
+    margin: 0 20px;
+    font-size: 18px;
+    opacity: 90%;
+    font-weight: 100;
+}
+.card1 h5
+{
+    margin: 0 20px;
+    opacity: 50%;
+}
+.card1 p
+{
+    font-size: 15px;
+}
+.card1 p.p1
+{
+    font-size: 20px;
+    padding: 20px 20px;
+}
+.card1 p.p2
+{
+    opacity: 70%;
+    padding: 0px 20px;
+}
+.card1 img
+{
+    border: 3px solid hsl(263, 85%, 74%);
+}
+
+/* card-2 */
+.card2
+{
+    grid-area: card-2;
+    background-color: var(--Very-dark-grayish-blue);
+    border-radius: 7px;
+    color: var(--White);
+    padding: 30px 30px;
+}
+.card2 h3
+{
+    margin: 0 20px;
+    font-size: 18px;
+    opacity: 90%;
+    font-weight: 100;
+}
+.card2 h5
+{
+    margin: 0 20px;
+    opacity: 50%;
+}
+.card2 p
+{
+    font-size: 15px;
+}
+.card2 p.p1
+{
+    font-size: 20px;
+    padding: 20px 20px;
+}
+.card2 p.p2
+{
+    opacity: 70%;
+    padding: 0px 20px;
+}
+.card2 img
+{
+    border: 3px solid hsl(217, 19%, 48%);
+}
+/* card-3 */
+.card3
+{
+    grid-area: card-3;
+    background-color: var(--White);
+    border-radius: 7px;
+    color: var(--Very-dark-grayish-blue);
+    padding: 30px 30px;
+}
+.card3 h3
+{
+    margin: 0 20px;
+    font-size: 18px;
+    opacity: 90%;
+    font-weight: 100;
+}
+.card3 h5
+{
+    margin: 0 20px;
+    opacity: 50%;
+}
+.card3 p
+{
+    font-size: 15px;
+}
+.card3 p.p1
+{
+    font-size: 20px;
+    padding: 20px 20px;
+}
+.card3 p.p2
+{
+    opacity: 70%;
+    padding: 0px 20px;
+}
+.card3 img
+{
+    border: 3px solid hsl(0, 0%, 100%);
+}
+/* card-4 */
+.card4
+{
+    grid-area: card-4;
+    background-color: var(--Very-dark-blackish-blue);
+    border-radius: 7px;
+    color: var(--White);
+    padding: 30px 30px;
+}
+.card4 h3
+{
+    margin: 0 20px;
+    font-size: 18px;
+    opacity: 90%;
+    font-weight: 100;
+}
+.card4 h5
+{
+    margin: 0 20px;
+    opacity: 50%;
+}
+.card4 p
+{
+    font-size: 15px;
+}
+.card4 p.p1
+{
+    font-size: 20px;
+    padding: 20px 20px;
+}
+.card4 p.p2
+{
+    opacity: 70%;
+    padding: 0px 20px;
+}
+.card4 img
+{
+    border: 3px solid var(--Moderate-violet);
+}
+/* card-5 */
+.card5
+{
+    grid-area: card-5;
+    background-color: var(--White);
+    border-radius: 7px;
+    color: var(--Very-dark-grayish-blue);
+    padding: 30px 30px;
+}
+.card5 h5
+{
+    margin: 0 20px;
+    opacity: 50%;
+}
+.card5 p
+{
+    font-size: 15px;
+}
+.card5 p.p1
+{
+    font-size: 20px;
+    padding: 20px 20px;
+}
+.card5 p.p2
+{
+    opacity: 70%;
+    padding: 0px 20px;
+}
+.card5 img
+{
+    border: 3px solid hsl(0, 0%, 100%);
+}
+
+.attribution
+{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.attribution a
+{
+    text-decoration: none;
+    color: var(--Very-dark-blackish-blue);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 375px)
+{
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 30px 20px;
+    }
+    .attribution
+    {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 0 80px;
+    }
+    .attribution a
+    {
+    text-decoration: none;
+    color: var(--Very-dark-blackish-blue);
+    font-weight: 900;
+    font-size: 18px;
+    }
+}
