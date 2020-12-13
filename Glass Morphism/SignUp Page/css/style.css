@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/images/bg.jpg);
+}
+
+.container img {
+    height: 70vh;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.card {
+    display: grid;
+    margin: auto;
+    margin-top: 100px;
+    height: 70vh;
+    width: 60%;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.0px);
+    -webkit-backdrop-filter: blur(8.0px);
+    border-radius: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px 15px;
+    color: #fff;
+}
+
+.form-control form {
+    display: grid;
+    flex-direction: row;
+}
+
+.form-control {
+    padding-right: 60px;
+    margin-right: 60px;
+}
+
+.container h1 {
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container p {
+    margin: 10px 0;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+.btn {
+    border: none;
+    background: #00c6ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #fff;
+    margin: 10px 0;
+    margin-top: 25px;
+    padding: 15px 0;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.form-control input[type='text'],
+.form-control input[type='password'] {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: rgba(155, 155, 155, 0.26);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(14.0px);
+    -webkit-backdrop-filter: blur(14.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.form-control a {
+    font-weight: 900;
+    text-decoration: none;
+    color: #27cffd;
+}
+
+.form-control hr {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgba(155, 155, 155, 0.26);
+}
